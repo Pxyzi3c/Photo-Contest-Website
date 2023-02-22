@@ -1,0 +1,627 @@
+/* =============== HEADER =============== */
+.header_texts {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    color: var(--color-dark);
+    text-align: center;
+    margin: 2.5rem 0;
+    margin-bottom: 7.5rem;
+}
+
+/* =============== CAROUSEL =============== */
+.carousel_container {                   /*SECTION*/
+    width: var(--container-width-lg);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input {
+    display: none;
+}
+
+.img_container {  /*st*/
+    width: 20%;
+    transition: var(--transition);
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.shadow_gradient {
+    width: 100%;
+    position: absolute;
+    height: inherit;
+    border-radius: 1.2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.918) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.img_container .img_details {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    position: absolute;
+    float: inline-start;
+    width: 90%;
+    z-index: 1;
+}
+
+.img_container .img_details p{
+    color: white;
+}
+
+.img_container .img_details #title{
+    font-weight: 500;
+}
+
+.img_container .photog_profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.img_container .photog_profile .photog_profile_image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img_container .photog_profile .photog_profile_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.view_btn {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_btn .btn {
+    color: var(--color-white);
+    padding: 0 2rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.view_btn .btn:hover i{
+    margin-left: 1rem;
+    transition: var(--transition);
+}
+
+.view_btn .btn:hover {
+    background: rgba(0, 0, 0, 0.349);
+    transition: var(--transition);
+}
+/* -------------- BUTTONS (FRONT) -------------- */
+.nav-m {
+    position: absolute;
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.m-btn {
+    border: 1px solid var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.m-btn:hover {
+    background: var(--color-white);
+}
+
+#radio1:checked ~.first {
+    margin-left: 0;
+}
+
+#radio2:checked ~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~.first {
+    margin-left: -80%;
+}
+
+/* -------------- BUTTONS (AUTO) -------------- */
+.nav_auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_auto div {
+    border: 1px solid var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.nav_auto div:not(:last-child) {
+    margin-right: 30px;
+    justify-content: center;    
+}
+
+#radio1:checked ~ .nav_auto .a-b1 {
+    background: var(--color-white);
+}
+
+#radio2:checked ~ .nav_auto .a-b2 {
+    background: var(--color-white);
+}
+
+#radio3:checked ~ .nav_auto .a-b3 {
+    background: var(--color-white);
+}
+
+#radio4:checked ~ .nav_auto .a-b4 {
+    background: var(--color-white);
+}
+
+#radio5:checked ~ .nav_auto .a-b5 {
+    background: var(--color-white);
+}
+
+/* =============== FEATURED PHOTOGRAPHERS =============== */
+.featured_photographers {
+    width: var(--container-width-lg);
+    margin: 2.5rem auto;
+    padding-top: 2rem;
+    border-top: solid .2rem var(--color-line);
+    position: relative;
+}
+
+.featured_photogs_texts {
+    margin-bottom: 2rem;
+}
+
+.featured_photogs_container {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    position: relative;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    transition: var(--transition);
+}
+
+.swiper-slide:hover {
+    background: var(--color-gradient2);
+    transition: var(--transition);
+    color: white !important;
+}
+
+.swiper-slide:hover .image {
+    background: white !important;
+    transition: var(--transition);
+}
+
+.featured_photogs_container .card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured_photographers .card .image {
+    height: 8.75rem;
+    width: 8.75rem;
+    overflow: hidden;
+    border-radius: 50%;           
+    padding: .25rem;
+    background: var(--color-gradient2);
+}
+
+.featured_photographers .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;           
+}
+
+.featured_photogs_container .card_content p{
+    line-height: 0px;
+    padding-top: 6px;
+    margin: 1rem 0;
+}
+
+.featured_photogs_container .card_content .media-icons{
+    line-height: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.featured_photogs_container .card_content .media-icons i{
+    line-height: 0px;
+    margin: 1rem 0;
+    transform: scale(1.5);
+    color: var(--color-line);
+    transition: var(--transition);
+}
+
+.featured_photogs_container .card_content .media-icons i:hover{
+    opacity: 1;
+    color: var(--color-main2);
+}
+
+.swiper-pagination-bullet {
+    width: 25px !important;
+    border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-main2) !important;
+}
+/* =============== END - FEATURED PHOTOGRAPHERS =============== */
+
+/* =============== PAST WINNER =============== */
+.past_winner {
+    width: var(--container-width-lg);
+    margin: 2.5rem auto 0;
+    padding-top: 2rem;
+    border-top: solid .2rem var(--color-line);
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.past_winner_texts {
+    margin-bottom: 2rem;
+}
+
+.past_winner_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.past_winner_container .image_details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.past_winner_container .image_details .photographer_details{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.past_winner_container .image_details .photographer_details  .photographer_details_texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.past_winner_container .image_details #photog_name{
+    line-height: 0px;
+    padding-top: 6px;
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--color-main2);
+}
+
+.past_winner_container .image_details #image_title{
+    line-height: 0px;
+    margin: 1rem 0;
+}
+
+.past_winner_container .image_details #description span{
+    font-weight: 500;
+}
+
+.past_winner_container .image_details #description{
+    margin-bottom: 1rem;
+}
+
+.past_winner_container .image_details .photographer_details .image_container{
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    border-radius: 50%;           
+    padding: .2rem;
+    background: var(--color-gradient2);
+}
+
+.past_winner_container .image_details .photographer_details .image_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.past_winner_container .pastimg_image_container {
+    height: 500px;
+    width: 100%;
+    border-radius: 1.2rem;
+    overflow: hidden;   
+}
+/* =============== END - PAST WINNER =============== */
+
+/* ======================================= TABLET VIEW ======================================= */
+@media screen and (max-width: 1024px) {
+    
+}
+/* ======================================= MOBILE VIEW ======================================= */
+@media screen and (max-width: 600px) {
+    /* =============== HEADER =============== */
+    .header_texts {
+        top: 3.5rem;
+        margin: 2.5rem 0;
+        margin-bottom: 5rem;
+    }
+    
+    .carousel_container {                
+        width: 100vw;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .slider{
+        border-radius: 0;
+    }
+    
+    .slide {
+        width: 500%;
+        height: 300px;
+    }
+    
+    .slide input {
+        display: none;
+    }
+    
+    .img_container { 
+        width: 20%;
+        transition: var(--transition);
+    }
+    
+    .img_container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .shadow_gradient {
+        border-radius: 0;
+    }
+    
+    .img_container .img_details {
+        display: none;
+    }
+    
+    .view_btn {
+        position: absolute;
+        bottom: 3rem;
+    }
+    
+    .view_btn .btn {
+        padding: .5rem 2rem;
+    }
+    
+    .view_btn .btn:hover i{
+        margin-left: 1rem;
+        transition: var(--transition);
+    }
+    
+    .view_btn .btn:hover {
+        background: rgba(0, 0, 0, 0.349);
+        transition: var(--transition);
+    }
+    /* -------------- BUTTONS (FRONT) -------------- */
+    .nav-m {
+        position: absolute;
+        width: 100%;
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .m-btn {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    .m-btn:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    .m-btn:hover {
+        background: var(--color-white);
+    }
+    
+    #radio1:checked ~.first {
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~.first {
+        margin-left: -20%;
+    }
+    
+    #radio3:checked ~.first {
+        margin-left: -40%;
+    }
+    
+    #radio4:checked ~.first {
+        margin-left: -60%;
+    }
+    
+    #radio5:checked ~.first {
+        margin-left: -80%;
+    }
+    
+    /* -------------- BUTTONS (AUTO) -------------- */
+    .nav_auto {
+        width: 100%;
+        margin-top: 270px;
+    }
+    
+    .nav_auto div {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    .nav_auto div:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    /* =============== FEATURED PHOTOGRAPHERS =============== */
+    .featured_photographers {
+        width: var(--container-width-sm);
+        margin: 1rem auto;
+        padding-top: 1rem;
+    }
+
+    .featured_photogs_texts {
+        margin-bottom: 1rem;
+    }
+
+    .swiper-slide {
+        position: relative;
+        padding: 0;
+        border-radius: 1.2rem;
+    }
+
+    .featured_photographers .card .image {
+        height: 4rem;
+        width: 4rem;
+        padding: .1rem;
+    }
+
+    .featured_photogs_container .card_content p{
+        transform: scale(.9);
+        white-space: nowrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-width: 4.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 16px;
+    }
+
+    .featured_photogs_container .card_content .media-icons{
+        display: none;
+    }
+
+    .featured_photogs_container .card_content .media-icons i{
+        display: none;
+    }
+
+    .featured_photogs_container .card_content .media-icons i:hover{
+        display: none;
+    }
+    /* =============== END - FEATURED PHOTOGRAPHERS =============== */
+
+    /* =============== PAST WINNER =============== */
+    .past_winner {
+        width: var(--container-width-sm);
+        margin: 1rem auto 0;
+        padding-top: 1rem;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+
+    .past_winner_texts {
+        margin-bottom: 1rem;
+    }
+
+    .past_winner_container .image_details .photographer_details{
+        gap: .2rem;
+    }
+
+    .past_winner_container .image_details .photographer_details  .photographer_details_texts {
+        transform: scale(.9);
+    }
+
+    .past_winner_container .image_details #description{
+        transform: scale(.9);
+        text-align: justify;
+    }
+
+    .past_winner_container .image_details #photog_name{
+        margin: .2rem 0;
+        font-size: 1.1rem;
+    }
+
+    .past_winner_container .image_details #image_title{
+        line-height: 0px;
+        margin: 1rem 0;
+    }
+
+    .past_winner_container .image_details #description span{
+        font-weight: 500;
+    }
+
+    .past_winner_container .image_details #description{
+        margin-bottom: 1rem;
+    }
+
+    .past_winner_container .image_details .photographer_details .image_container{
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: .1rem;
+    }
+
+    .past_winner_container .pastimg_image_container {
+        height: 250px;
+        width: 100%;
+        border-radius: 1.2rem;
+        overflow: hidden;   
+    }
+
+    .past_winner_container .pastimg_image_container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    /* =============== END - PAST WINNER =============== */
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME | PONTILLAS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./imgs/logo.png"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/MAIN.css">
+    <link rel="stylesheet" href="./CSS/HOME.css">
+    <!-- SCROLL EFFECTS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- GOOGLE FONTS (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--================================ NAVIGATION BAR ================================-->
+    <nav>
+        <div class="container nav__container">
+            <a href="HOME.html" id="logo"><img src="./imgs/logo.png" alt="" class="logo__img"><h4>HOBVIC</h4></a>
+            <ul class="nav_menu">
+                <li><a href="HOME.html" id="active_page"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                <li><a href="CONTEST.html"><i class="bi bi-camera-fill"></i>Photo Contest</a></li>
+                <li><a href="ABOUT.html"><i class="bi bi-people-fill"></i>About Us</a></li>
+                <li><a href="CONTACT.html"><i class="bi bi-telephone-fill"></i>Contact</a></li>
+                <li><a href="LOGIN.html" id="logout"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+            </ul>
+            <button id="open_menu_btn"><i class="bi bi-list"></i></button>
+            <button id="close_menu_btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </nav>
+    <!--================================ END OF NAVIGATION BAR ================================-->
+
+    <!--================================ LANDING VIEW (HEADER) ================================-->
+    <div class="header_texts" data-aos="fade-up" data-aos-duration="1000">
+        <h1>
+            Photo Contest
+        </h1>
+        <p>
+            Cast your vote for this month's photo contest.
+        </p>
+    </div>
+
+    <section class="carousel_container">
+        <div class="slider" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="img_container first">
+                    <div class="img_details">
+                        <div class="photog_profile">
+                            <div class="photog_profile_image">
+                                <img src="./imgs/PORT1.jpg" alt="">
+                            </div>
+                            <p id="name">Photographer name</p>
+                        </div>
+                        <p id="title">Title</p>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit fugiat molestias ad deleniti quibusdam impedit aliquam, beatae veritatis, enim soluta! Odit adipisci quibusdam vitae.</p>
+                    </div>
+                    <img src="./imgs/PIC1.jpg" alt="...">
+                </div>
+                <div class="img_container">
+                    <div class="img_details">
+                        <div class="photog_profile">
+                            <div class="photog_profile_image">
+                                <img src="./imgs/PORT2.jpg" alt="">
+                            </div>
+                            <p id="name">Photographer name</p>
+                        </div>
+                        <p id="title">Title</p>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit fugiat molestias ad deleniti quibusdam impedit aliquam, beatae veritatis, enim soluta! Odit adipisci quibusdam vitae.</p>
+                    </div>
+                    <img src="./imgs/PIC2.jpg" alt="...">
+                </div>
+                <div class="img_container">
+                    <div class="img_details">
+                        <div class="photog_profile">
+                            <div class="photog_profile_image">
+                                <img src="./imgs/PORT3.jpg" alt="">
+                            </div>
+                            <p id="name">Photographer name</p>
+                        </div>
+                        <p id="title">Title</p>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit fugiat molestias ad deleniti quibusdam impedit aliquam, beatae veritatis, enim soluta! Odit adipisci quibusdam vitae.</p>
+                    </div>
+                    <img src="./imgs/PIC3.jpg" alt="...">
+                </div>
+                <div class="img_container">
+                    <div class="img_details">
+                        <div class="photog_profile">
+                            <div class="photog_profile_image">
+                                <img src="./imgs/PORT4.jpg" alt="">
+                            </div>
+                            <p id="name">Photographer name</p>
+                        </div>
+                        <p id="title">Title</p>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit fugiat molestias ad deleniti quibusdam impedit aliquam, beatae veritatis, enim soluta! Odit adipisci quibusdam vitae.</p>
+                    </div>
+                    <img src="./imgs/PIC4.jpg" alt="...">
+                </div>
+                <div class="img_container">
+                    <div class="img_details">
+                        <div class="photog_profile">
+                            <div class="photog_profile_image">
+                                <img src="./imgs/PORT5.jpg" alt="">
+                            </div>
+                            <p id="name">Photographer name</p>
+                        </div>
+                        <p id="title">Title</p>
+                        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit fugiat molestias ad deleniti quibusdam impedit aliquam, beatae veritatis, enim soluta! Odit adipisci quibusdam vitae.</p>
+                    </div>
+                    <img src="./imgs/PIC5.jpg" alt="...">
+                </div>
+
+                <div class="shadow_gradient"></div>
+                <div class="view_btn">
+                    <a href="CONTEST.html" class="btn">Vote Here &nbsp<i class="bi bi-chevron-right"></i></a>
+                </div>
+
+                <div class="nav_auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                    <div class="a-b5"></div>
+                </div>
+            </div>
+
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+                <label for="radio5" class="m-btn"></label>
+            </div>
+        </div>
+    </section>
+    <!--================================ END OF LANDING VIEW (HEADER) ================================-->
+
+    <!--================================ FEATURED PHOTOGRAPHERS ================================-->
+    <section class="featured_photographers">
+        <div class="featured_photogs_texts" data-aos="fade-up" data-aos-duration="1000">
+            <h3>
+                Featured Photographers
+            </h3>
+        </div>
+
+        <div class="swiper mySwiper featured_photogs_container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT1.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT2.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT3.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT4.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT5.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT6.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT7.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT8.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT9.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card_content">
+                        <div class="image">
+                            <img src="./imgs/PORT910.jpg" alt="">
+                        </div>
+
+                        <p>Firstname Lastname</p>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================ END - FEATURED PHOTOGRAPHERS ================================-->
+
+    <!--================================ PAST MONTH'S WINNER ================================-->
+    <section class="past_winner">
+        <div class="past_winner_texts" data-aos="fade-up" data-aos-duration="1000">
+            <h3>
+                Past Month's Winner
+            </h3>
+        </div>
+
+        <div class="past_winner_container">
+            <div class="image_details">
+                <div class="photographer_details" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="image_container">
+                        <img src="./imgs/PAST_WINNER_PORT.jpg" alt="">
+                    </div>
+                    <div class="photographer_details_texts">
+                        <p id="photog_name">Carlos Evangelista</p>
+                        <p id="image_title">Wanderer's Breeze</p>
+                    </div>
+                </div>
+                <p id="description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span>Description: &nbsp</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aut sed dolorem repellendus placeat voluptas voluptate, enim quae voluptatum deserunt vel non alias ipsa magnam.</p>
+            </div>
+
+            <div class="pastimg_image_container" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./imgs/PAST_WINNER.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--================================ END - PAST MONTH'S WINNERS ================================-->
+
+    <!--================================ FOOTER ================================-->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <h4><a href="OJT2_HOMEPAGE.html">HOBVIC</a></h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptas qui dolores!
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="HOME.html">Home</a></li>
+                    <li><a href="CONTEST.html">Vote Here</a></li>
+                    <li><a href="ABOUT.html">About Us</a></li>
+                    <li><a href="CONTACT.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#"></a>Privacy Policy</li>
+                    <li><a href="#"></a>Terms and Conditions</li>
+                    <li><a href="#"></a>Refund Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+06 964 5457 032</p>
+                    <p>crimpgrass24@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <small>Copyright &copy; PONTILLAS 2023</small>
+        </div>
+    </footer>
+    <!--================================ END OF FOOTER ================================-->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="./SCRIPT.js"></script>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 5){
+                counter = 1;
+            }
+        },5000);
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4.5,
+        spaceBetween: 30,
+        grabCursor: true
+        });
+    </script>
+
+    <!-- SCROLL EFFECTS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

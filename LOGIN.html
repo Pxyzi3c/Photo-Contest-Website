@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN | PONTILLAS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./imgs/logo.png"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/MAIN.css">
+    <link rel="stylesheet" href="./CSS/LOGREG.css">
+    <!-- GOOGLE FONTS (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+    <div class="form_container">
+        <h1>Log In</h1>
+        <form name="myForm" action="HOME.html" method="post" onsubmit="return validateForm()">
+            <input type="text" class="username__input" name="Username" placeholder="Username" autocomplete="off" required>  
+            <input type="password" class="pass__input" name="Password" placeholder="Enter your password" autocomplete="off" required>
+            <button type="submit" class="submit-btn btn-primary">Login</button>
+        </form>
+        <div class="signup">
+            No Account? <a href="SIGNUP.html">Signup Here</a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="./SCRIPT.js"></script>
+</body>
+</html>
